@@ -9,6 +9,7 @@ int main()
 
 	days->push_back(new Day_1());
 	days->push_back(new Day_2());
+	days->push_back(new Day_3());
 
 	for (Days* day : *days) {
 		std::cout << day->getDayName() << std::endl << day->getAnswer() << std::endl;

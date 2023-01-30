@@ -5,33 +5,22 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="Source Files\Headers">
-      <UniqueIdentifier>{277a256c-aecd-421f-9453-d557018f8f56}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\cpp">
-      <UniqueIdentifier>{6fe935a0-9cb2-4945-b34d-f29feeb540ae}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Day 1">
       <UniqueIdentifier>{fc03aeea-4ab7-490d-8494-636d71d26ce8}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Day 2">
       <UniqueIdentifier>{fb80aed3-e679-4225-a511-fc70e3a2d2ab}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Day 3">
+      <UniqueIdentifier>{3b8c917f-eabf-4d37-910a-b4bba3d2f0df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Days Common">
+      <UniqueIdentifier>{277a256c-aecd-421f-9453-d557018f8f56}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AdventOfCode.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Days_common.cpp">
-      <Filter>Source Files\cpp</Filter>
     </ClCompile>
     <ClCompile Include="Day_1.cpp">
       <Filter>Source Files\Day 1</Filter>
@@ -39,13 +28,16 @@
     <ClCompile Include="Day_2.cpp">
       <Filter>Source Files\Day 2</Filter>
     </ClCompile>
+    <ClCompile Include="Days_common.cpp">
+      <Filter>Source Files\Days Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Day_3.cpp">
+      <Filter>Source Files\Day 3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdventOfCode.h">
       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Days_common.h">
-      <Filter>Source Files\Headers</Filter>
     </ClInclude>
     <ClInclude Include="CommonImports.h">
       <Filter>Source Files</Filter>
@@ -59,6 +51,12 @@
     <ClInclude Include="Day_2.h">
       <Filter>Source Files\Day 2</Filter>
     </ClInclude>
+    <ClInclude Include="Days_common.h">
+      <Filter>Source Files\Days Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Day_3.h">
+      <Filter>Source Files\Day 3</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day_1.txt">
@@ -66,6 +64,9 @@
     </Text>
     <Text Include="Day_2.txt">
       <Filter>Source Files\Day 2</Filter>
+    </Text>
+    <Text Include="Day_3.txt">
+      <Filter>Source Files\Day 3</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
