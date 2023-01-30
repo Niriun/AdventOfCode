@@ -13,10 +13,47 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Headers">
+      <UniqueIdentifier>{277a256c-aecd-421f-9453-d557018f8f56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cpp">
+      <UniqueIdentifier>{6fe935a0-9cb2-4945-b34d-f29feeb540ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Inputs">
+      <UniqueIdentifier>{0f8bd209-8f04-4f54-a946-9d5ce22faf5b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AdventOfCode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day_1.cpp">
+      <Filter>Source Files\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Days_common.cpp">
+      <Filter>Source Files\cpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AdventOfCode.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day_1.h">
+      <Filter>Source Files\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Days_common.h">
+      <Filter>Source Files\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonImports.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Days_list.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Day_1.txt">
+      <Filter>Source Files\Inputs</Filter>
+    </Text>
   </ItemGroup>
 </Project>
