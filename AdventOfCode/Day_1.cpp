@@ -4,24 +4,49 @@
 Day_1::Day_1() {
 }
 
-int Day_1::getAnswer() {
+std::string Day_1::getAnswer() {
 	std::string input = readInput(_inputFile);
-	std::cout << input << std::endl;
-	std::vector<std::string>* subStrings = new std::vector<std::string>();
-	std::string delimiter = " ";
-	int index = 0;
+
+	std::vector<std::string>* splitStrings = getSubStrings(input);
+
+	int elf = 0;
+
+	for (std::string stringToParse : *splitStrings) {
+		if (stringToParse == "") {
+			if (elf > maxMax) {
+				minMax = middleMax;
+				middleMax = maxMax;
+				maxMax = elf;
+			}
+			else if (elf > middleMax) {
+				minMax = middleMax;
+				middleMax = elf;
+			}
+			else if (elf > minMax) {
+				minMax = elf;
+			}
+
+			elf = 0;
+		}
+		else {
+			elf += std::stoi(stringToParse);
+		}
+	}
+
+	return std::to_string(maxMax) + ", " + std::to_string(maxMax + middleMax + minMax);
+}
+
+std::vector<std::string>* Day_1::getSubStrings(std::string input) {
+	std::string delimiter = "\n";
 	size_t pos = 0;
+	std::vector<std::string>* output = new std::vector<std::string>();
 
 	while ((pos = input.find(delimiter)) != std::string::npos) {
-		subStrings->push_back(input.substr(0, pos));
+		output->push_back(input.substr(0, pos));
 		input.erase(0, pos + delimiter.length());
 	}
 
-	for (std::string subString : *subStrings) {
-		std::cout << subString << std::endl;
-	}
-
-	return 0;
+	return output;
 }
 
 std::string Day_1::getDayName() {
