@@ -25,6 +25,5 @@ std::string Days::readInput(std::string inputFileName) {
 
 	_inputStream->close();
 
-	std::cout << output;
 	return output;
 }

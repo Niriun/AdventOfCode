@@ -11,7 +11,7 @@ int main()
 	days->push_back(new Day_1());
 
 	for (Days* day : *days) {
-		day->getAnswer();
+		std::cout << day->getDayName() << std::endl << day->getAnswer() << std::endl;
 	}
 	int i;
 	std::cin >> i;

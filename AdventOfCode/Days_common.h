@@ -5,7 +5,7 @@
 class Days abstract
 {
 public:
-	virtual	int getAnswer() = 0;
+	virtual	std::string getAnswer() = 0;
 	virtual std::string getDayName() = 0;
 
 protected:
