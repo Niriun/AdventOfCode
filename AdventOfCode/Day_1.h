@@ -11,13 +11,12 @@ public:
 
 private:
 
-	std::vector<std::string>* parseInput(std::string input) override;
+	void parseInput(std::string input) override;
 
 	void calculateHighestThreeElves(std::vector<std::string>* parsedInput);
 
 	const std::string _dayName = "Day 1";
 	const std::string _inputFile = "Day_1.txt";
-	std::vector<std::string>* parsedInput;
 	std::vector<int> elfCalories;
 	int maxMax = 0, middleMax = 0, minMax = 0;
 };

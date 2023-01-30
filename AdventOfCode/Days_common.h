@@ -10,10 +10,14 @@ public:
 
 protected:
 	std::string readInput(std::string inputFileName);
+	virtual void parseInput(std::string input) = 0;
+
 	Days();
 	~Days();
 
+	std::vector<std::string>* parsedInput;
+
 private:
-	virtual std::vector<std::string>* parseInput(std::string input) = 0;
+
 	std::ifstream* _inputStream;
 };

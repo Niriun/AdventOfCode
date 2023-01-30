@@ -2,7 +2,7 @@
 
 Day_1::Day_1() {
 	std::string input = readInput(_inputFile);
-	parsedInput = parseInput(input);
+	parseInput(input);
 }
 std::string Day_1::getAnswer() {
 	calculateHighestThreeElves(parsedInput);
@@ -10,17 +10,15 @@ std::string Day_1::getAnswer() {
 	return std::to_string(maxMax) + ", " + std::to_string(maxMax + middleMax + minMax);
 }
 
-std::vector<std::string>* Day_1::parseInput(std::string input) {
+void Day_1::parseInput(std::string input) {
+	parsedInput = new std::vector<std::string>();
 	std::string delimiter = "\n";
 	size_t pos = 0;
-	std::vector<std::string>* output = new std::vector<std::string>();
 
 	while ((pos = input.find(delimiter)) != std::string::npos) {
-		output->push_back(input.substr(0, pos));
+		parsedInput->push_back(input.substr(0, pos));
 		input.erase(0, pos + delimiter.length());
 	}
-
-	return output;
 }
 
 void Day_1::calculateHighestThreeElves(std::vector<std::string>* parsedInput) {
