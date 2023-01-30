@@ -1,19 +1,28 @@
 // AdventOfCode.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include <iostream>
-#include <string>
+#include "AdventOfCode.h"
+#include "Days_list.h"
 
-String 
 int main()
 {
-    std::cout << "Hello World!\n";
+	std::vector<Days*>* days = new std::vector<Days*>();
+
+	days->push_back(new Day_1());
+
+	for (Days* day : *days) {
+		day->getAnswer();
+	}
+	int i;
+	std::cin >> i;
+
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
-// Tips for Getting Started: 
+// Tips for Getting Started:
 //   1. Use the Solution Explorer window to add/manage files
 //   2. Use the Team Explorer window to connect to source control
 //   3. Use the Output window to see build output and other messages
