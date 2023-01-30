@@ -13,7 +13,7 @@ private:
 
 	void parseInput(std::string input) override;
 
-	void calculateHighestThreeElves(std::vector<std::string>* parsedInput);
+	void calculateHighestThreeElves();
 
 	const std::string _dayName = "Day 1";
 	const std::string _inputFile = "Day_1.txt";

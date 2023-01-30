@@ -5,7 +5,7 @@ Day_1::Day_1() {
 	parseInput(input);
 }
 std::string Day_1::getAnswer() {
-	calculateHighestThreeElves(parsedInput);
+	calculateHighestThreeElves();
 
 	return std::to_string(maxMax) + ", " + std::to_string(maxMax + middleMax + minMax);
 }
@@ -21,7 +21,7 @@ void Day_1::parseInput(std::string input) {
 	}
 }
 
-void Day_1::calculateHighestThreeElves(std::vector<std::string>* parsedInput) {
+void Day_1::calculateHighestThreeElves() {
 	int currentElf = 0;
 	for (std::string line : *parsedInput) {
 		if (line == "") {
