@@ -1,5 +1,4 @@
 #include "Days_common.h"
-#include <iostream>
 
 Days::Days() {
 	_inputStream = new std::ifstream();
